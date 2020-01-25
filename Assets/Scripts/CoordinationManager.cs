@@ -9,7 +9,9 @@ public class CoordinationManager : MonoBehaviour
     public Animator bacteria;
     public Animator biofilm;
 
-    int state;
+    public float urineSeaTime = 32.0f;
+    public float bacteriaTime = 5.0f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,12 +27,12 @@ public class CoordinationManager : MonoBehaviour
         catheter.SetBool("start", true);
         yield return new WaitForSeconds(1.0f);
         urineSea.SetBool("start", true);
-        yield return new WaitForSeconds(5.0f);
+        yield return new WaitForSeconds(urineSeaTime);
 
         yield return new WaitUntil(isSpacePressed);
 
         bacteria.SetBool("start", true);
-        yield return new WaitForSeconds(5.0f);
+        yield return new WaitForSeconds(bacteriaTime);
 
         yield return new WaitUntil(isSpacePressed);
 
