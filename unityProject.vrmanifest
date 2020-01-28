@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.vrbladder.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\VRBLADDER\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\worker\\Documents\\VRBLADDER\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "VR Bladder [Testing]"
